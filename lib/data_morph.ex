@@ -91,7 +91,7 @@ defmodule DataMorph do
         %OpenRegister.Country{acronym: "UK", iso: nil, name: "United Kingdom"}
       ]
 
-  ## Parmeters
+  ## Parameters
 
    - `tsv`: TSV stream or string
    - `namespace`: string or atom to form first part of struct alias
@@ -107,7 +107,7 @@ defmodule DataMorph do
 
   See `structs_from_tsv/3` for examples.
 
-  ## Parmeters
+  ## Parameters
 
    - `csv`: CSV stream or string
    - `namespace`: string or atom to form first part of struct alias
@@ -141,7 +141,7 @@ defmodule DataMorph do
         %{iso_code: "gb", name: "United Kingdom"}
       ]
 
-  ## Parmeters
+  ## Parameters
 
    - `tsv`: TSV stream or string
   """
@@ -152,7 +152,7 @@ defmodule DataMorph do
   @doc ~S"""
   Returns stream of maps with atom keys created from `csv` string or stream.
 
-  ## Parmeters
+  ## Parameters
 
    - `csv`: CSV stream or string
    - `options`: optionally pass in separator, e.g. separator: ";"
@@ -195,7 +195,7 @@ defmodule DataMorph do
 
   Useful when you want to retain the field order of the original stream.
 
-  ## Parmeters
+  ## Parameters
    - `csv`: CSV stream or string
    - `options`: optionally pass in separator, e.g. separator: ";"
   """
@@ -211,7 +211,7 @@ defmodule DataMorph do
   Takes stream and applies filter `regexp` when not nil, and takes `count` when
   not nil.
 
-  ## Parmeters
+  ## Parameters
    - `stream`: stream of string lines
    - `regex`: nil or regexp to match lines via Stream.filter/2 and String.match?/2
    - `count`: optional take count to apply via Stream.take/2
